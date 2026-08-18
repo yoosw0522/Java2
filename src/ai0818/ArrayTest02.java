@@ -7,8 +7,7 @@ public class ArrayTest02 {
 
         for (int i = 0; i < arr1.length; i++) {
             sum += arr1[i];
-
-            if (i < arr1.length - 1) {
+            if (i < arr1.length-1){
                 System.out.print(arr1[i] + " + ");
             } else {
                 System.out.print(arr1[i] + " = " + sum);
