@@ -1,4 +1,4 @@
-package a10818;
+package ai0818;
 
 public class ArrayTest02 {
     public static void main(String[] args) {
