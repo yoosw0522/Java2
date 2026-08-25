@@ -10,8 +10,13 @@ public class ArrayTest03 {
 
         System.out.println("추가된 배열의 길이: " + arr1.length);
 
-        for (int i = 0; i < arr1.length; i++) {
-            System.out.print(arr1[i] + " ");
+        //       for (int i = 0; i < arr1.length ; i++) {
+        //       System.out.print(arr1[i] + "  ");
+        //         }
+
+//        enhanced for
+        for (int data : arr1){
+            System.out.print(data + " ");
         }
     }
 }
