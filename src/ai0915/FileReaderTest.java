@@ -9,7 +9,7 @@ public class FileReaderTest {
     public static void main(String[] args) {
         try {
             // File을 읽어오기 위한 입력스트림(InputStream) 생성
-            BufferedReader br = new BufferedReader(new FileReader("D:/FileIOTest/myData1.txt"));
+            BufferedReader br = new BufferedReader(new FileReader("D:/FileIOTest/MyData1.txt"));
             String line = "";
 
             // File에서 한 줄 읽어오기

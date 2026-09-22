@@ -6,21 +6,20 @@ import java.io.FileReader;
 import java.io.IOException;
 
 public class FileReaderTest3 {
+    // 파일 내용 전체를 거꾸로 출력
     public static void main(String[] args) {
         try {
             StringBuilder sb = new StringBuilder();
+            // BufferedReader br = new BufferedReader(new FileReader("D:/FileIOTest/MyData1.txt"));
+            BufferedReader br = new BufferedReader(new FileReader("MyData1.txt"));
 
-            // File을 읽어오기 위한 입력스트림(InputStream) 생성
-            BufferedReader br = new BufferedReader(new FileReader("myData1.txt")); // 상대경로
             String line = "";
 
-            // File의 끝까지 File에서 한 줄씩 읽어오기
-            while (true){
+            while (true) {
                 line = br.readLine();
-
-                if (line == null)
+                if (line == null) {
                     break;
-
+                }
                 sb.append(line).append("\n");
             }
 
@@ -28,8 +27,8 @@ public class FileReaderTest3 {
             br.close();
 
             sb.reverse();
-            System.out.println(sb);
 
+            System.out.println(sb);
         } catch (FileNotFoundException e) {
             throw new RuntimeException(e);
         } catch (IOException e) {
